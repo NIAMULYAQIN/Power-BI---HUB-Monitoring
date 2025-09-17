@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Power BI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f6f9; /* warna abu soft */
+    }
+    h2 {
+      margin: 20px 0;
+      color: #333;
+    }
+    .dashboard-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    iframe {
+      width: 95%;
+      height: 80vh; /* gunakan tinggi relatif layar */
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Responsiveness tambahan */
+    @media (max-width: 768px) {
+      iframe {
+        height: 70vh; /* lebih pendek di tablet/HP */
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      iframe {
+        height: 60vh; /* lebih kecil di HP kecil */
+      }
+      h2 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Dashboard Power BI</h2>
+  <div class="dashboard-container">
+    <iframe title="Report Example"
+            src="https://app.powerbi.com/links/ky3byN0TFU?ctid=cb80c827-8201-4d81-a98b-2ac5f1dc3649&pbi_source=linkShare"
+            allowFullScreen="true"></iframe>
+  </div>
+</body>
+</html>
